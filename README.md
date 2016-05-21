@@ -30,12 +30,12 @@ Attach all the previously created volumes to the instance.
 ```
 [ec2-user ~]$ sudo mkdir /data /log /journal
 [ec2-user ~]$ lsblk
-[ec2-user ~]$ sudo mkfs -t ext4 /data
-[ec2-user ~]$ sudo mkfs -t ext4 /log
-[ec2-user ~]$ sudo mkfs -t ext4 /journal
-[ec2-user ~]$ sudo mount /data
-[ec2-user ~]$ sudo mount /journal
-[ec2-user ~]$ sudo mount /log
+[ec2-user ~]$ sudo mkfs -t ext4 /dev/xvdf
+[ec2-user ~]$ sudo mkfs -t ext4 /dev/xvdg
+[ec2-user ~]$ sudo mkfs -t ext4 /dev/xvdh
+[ec2-user ~]$ sudo mount /dev/xvdf /data
+[ec2-user ~]$ sudo mount /dev/xvdg /log
+[ec2-user ~]$ sudo mount /dev/xvdh /journal
 [ec2-user ~]$ sudo chown mongod:mongod /data /journal /log
 [ec2-user ~]$ sudo ln -s /journal /data/journal
 ```
