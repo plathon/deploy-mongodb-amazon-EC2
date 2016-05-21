@@ -47,3 +47,10 @@ to test if mongodb is ok
 ```
 [ec2-user ~]$ mongo
 ```
+
+### References
+[Deploy on Amazon EC2](https://docs.mongodb.com/ecosystem/platforms/amazon-ec2/).
+
+[Mongodb on amazon linux](https://docs.mongodb.com/v3.0/tutorial/install-mongodb-on-amazon/).
+
+[Using a amazon EBS volume](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html).
