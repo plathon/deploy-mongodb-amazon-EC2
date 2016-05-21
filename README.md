@@ -39,6 +39,12 @@ Attach all the previously created volumes to the instance.
 [ec2-user ~]$ sudo chown mongod:mongod /data /journal /log
 [ec2-user ~]$ sudo ln -s /journal /data/journal
 ```
+### Edit mongod.conf
+edit `mongod.conf` file and set:
+```
+dbpath = /data
+logpath = /log/mongod.log
+```
 ### Start mongodb
 ```
 [ec2-user ~]$ sudo service mongod start
