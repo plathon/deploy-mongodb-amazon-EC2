@@ -40,16 +40,20 @@ Attach all the previously created volumes to the instance.
 [ec2-user ~]$ sudo ln -s /journal /data/journal
 ```
 ### Edit mongod.conf
-edit `mongod.conf` file and set:
+Edit `mongod.conf` file and set:
 ```
 dbpath = /data
 logpath = /log/mongod.log
+```
+Add private ip address
+```
+bindIp: xxx.x.x.x
 ```
 ### Start mongodb
 ```
 [ec2-user ~]$ sudo service mongod start
 ```
-to test if mongodb is ok
+To test if mongodb is ok
 ```
 [ec2-user ~]$ mongo
 ```
