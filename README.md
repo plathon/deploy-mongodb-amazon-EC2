@@ -64,3 +64,5 @@ To test if mongodb is ok
 [Mongodb on amazon linux](https://docs.mongodb.com/v3.0/tutorial/install-mongodb-on-amazon/).
 
 [Using a amazon EBS volume](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html).
+
+[Security](https://docs.mongodb.com/manual/security/)
