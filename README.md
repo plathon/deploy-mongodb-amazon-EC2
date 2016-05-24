@@ -88,3 +88,5 @@ Successfully added user: {
 [Security](https://docs.mongodb.com/manual/security/)
 
 [db createUser documentation](https://docs.mongodb.com/v3.0/reference/method/db.createUser/)
+
+[MongoDB on AWS Cloud](https://s3.amazonaws.com/quickstart-reference/mongodb/latest/doc/MongoDB_on_the_AWS_Cloud.pdf)
