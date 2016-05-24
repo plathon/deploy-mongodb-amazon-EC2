@@ -57,6 +57,26 @@ To test if mongodb is ok
 ```
 [ec2-user ~]$ mongo
 ```
+In case of "locale set" trouble: `[ec2-user ~]$ export LC_ALL=C`
+### Authentication
+```
+[ec2-user ~]$ mongo
+```
+Create a global ADM user
+```
+> use admin
+switched to db admin
+> db.createUser({user: "root", pwd: "pass", roles: [{ role: "userAdminAnyDatabase", db: "admin" }]});
+Successfully added user: {
+	"user" : "root",
+	"roles" : [
+		{
+			"role" : "userAdminAnyDatabase",
+			"db" : "admin"
+		}
+	]
+}
+```
 
 ### References
 [Deploy on Amazon EC2](https://docs.mongodb.com/ecosystem/platforms/amazon-ec2/).
@@ -66,3 +86,5 @@ To test if mongodb is ok
 [Using a amazon EBS volume](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html).
 
 [Security](https://docs.mongodb.com/manual/security/)
+
+[db createUser documentation](https://docs.mongodb.com/v3.0/reference/method/db.createUser/)
